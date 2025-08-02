@@ -1,0 +1,10 @@
+torch
+torchvision
+torchaudio
+monai[all]
+SimpleITK
+matplotlib
+numpy
+pandas
+scikit-image
+seaborn
