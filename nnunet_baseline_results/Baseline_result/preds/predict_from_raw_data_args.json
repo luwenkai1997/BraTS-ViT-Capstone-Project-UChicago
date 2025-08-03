@@ -1,0 +1,11 @@
+{
+    "folder_with_segs_from_prev_stage": null,
+    "list_of_lists_or_source_folder": "/content/nnUNet_raw/Dataset232_BraTS_2023_rGANs/imagesTs",
+    "num_parts": 1,
+    "num_processes_preprocessing": 3,
+    "num_processes_segmentation_export": 3,
+    "output_folder_or_list_of_truncated_output_files": "/content/drive/MyDrive/data/Baseline_result/preds",
+    "overwrite": true,
+    "part_id": 0,
+    "save_probabilities": false
+}

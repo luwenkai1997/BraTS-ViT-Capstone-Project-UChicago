@@ -1,0 +1,57 @@
+2025-07-22 02:56:10,971  === 新推理会话 ===
+2025-07-22 02:56:11,023  总样本数=296, 最后15%样本数=45
+2025-07-22 02:56:11,428  [Fold 0] 拷贝权重成功 (246.9 MB)
+2025-07-22 02:56:14,885  [Fold 1] 拷贝权重成功 (246.9 MB)
+2025-07-22 02:56:15,198  [Fold 2] 拷贝权重成功 (246.9 MB)
+2025-07-22 02:56:18,227  [Fold 3] 拷贝权重成功 (246.9 MB)
+2025-07-22 02:56:18,489  [Fold 4] 拷贝权重成功 (246.9 MB)
+2025-07-22 02:56:18,493  开始 nnUNetv2_predict 推理…
+2025-07-22 02:56:22,667  推理失败，退出码 1
+2025-07-22 02:56:22,668  --- stdout ---
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+
+2025-07-22 02:56:22,669  --- stderr ---
+Traceback (most recent call last):
+  File "/usr/local/bin/nnUNetv2_predict", line 8, in <module>
+    sys.exit(predict_entry_point())
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/nnunetv2/inference/predict_from_raw_data.py", line 859, in predict_entry_point
+    predictor.initialize_from_trained_model_folder(
+  File "/usr/local/lib/python3.11/dist-packages/nnunetv2/inference/predict_from_raw_data.py", line 74, in initialize_from_trained_model_folder
+    dataset_json = load_json(join(model_training_output_dir, 'dataset.json'))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/batchgenerators/utilities/file_and_folder_operations.py", line 103, in load_json
+    with open(file, 'r') as f:
+         ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/content/nnUNet_results/Dataset232_BRaTS_2023_rGANs/nnUNetTrainer__nnUNetPlans__3d_fullres/dataset.json'
+
+2025-07-22 02:56:37,692  开始 nnUNetv2_predict 推理…
+2025-07-22 02:56:41,856  nnUNetv2_predict 退出码：1
+2025-07-22 02:56:41,857  --- stdout ---
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+
+2025-07-22 02:56:41,858  --- stderr ---
+Traceback (most recent call last):
+  File "/usr/local/bin/nnUNetv2_predict", line 8, in <module>
+    sys.exit(predict_entry_point())
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/nnunetv2/inference/predict_from_raw_data.py", line 859, in predict_entry_point
+    predictor.initialize_from_trained_model_folder(
+  File "/usr/local/lib/python3.11/dist-packages/nnunetv2/inference/predict_from_raw_data.py", line 74, in initialize_from_trained_model_folder
+    dataset_json = load_json(join(model_training_output_dir, 'dataset.json'))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/batchgenerators/utilities/file_and_folder_operations.py", line 103, in load_json
+    with open(file, 'r') as f:
+         ^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/content/nnUNet_results/Dataset232_BRaTS_2023_rGANs/nnUNetTrainer__nnUNetPlans__3d_fullres/dataset.json'
+

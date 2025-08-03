@@ -1,0 +1,33 @@
+2025-07-22 02:50:25,814  === 新的推理会话 ===
+2025-07-22 02:50:26,014  总样本数=1974, 取最后15%=297 做推理测试
+2025-07-22 02:50:26,827  开始 nnUNetv2_predict 推理…
+2025-07-22 02:51:11,923  开始 nnUNetv2_predict 推理…
+2025-07-22 02:51:16,417  nnUNetv2_predict 退出码：1
+2025-07-22 02:51:16,419  --- stdout ---
+
+#######################################################################
+Please cite the following paper when using nnU-Net:
+Isensee, F., Jaeger, P. F., Kohl, S. A., Petersen, J., & Maier-Hein, K. H. (2021). nnU-Net: a self-configuring method for deep learning-based biomedical image segmentation. Nature methods, 18(2), 203-211.
+#######################################################################
+
+
+2025-07-22 02:51:16,420  --- stderr ---
+/usr/local/lib/python3.11/dist-packages/nnunetv2/inference/predict_from_raw_data.py:84: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(join(model_training_output_dir, f'fold_{f}', checkpoint_name),
+Traceback (most recent call last):
+  File "/usr/local/bin/nnUNetv2_predict", line 8, in <module>
+    sys.exit(predict_entry_point())
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/nnunetv2/inference/predict_from_raw_data.py", line 859, in predict_entry_point
+    predictor.initialize_from_trained_model_folder(
+  File "/usr/local/lib/python3.11/dist-packages/nnunetv2/inference/predict_from_raw_data.py", line 84, in initialize_from_trained_model_folder
+    checkpoint = torch.load(join(model_training_output_dir, f'fold_{f}', checkpoint_name),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/serialization.py", line 1326, in load
+    with _open_zipfile_reader(opened_file) as opened_zipfile:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/torch/serialization.py", line 671, in __init__
+    super().__init__(torch._C.PyTorchFileReader(name_or_buffer))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: PytorchStreamReader failed reading zip archive: failed finding central directory
+
