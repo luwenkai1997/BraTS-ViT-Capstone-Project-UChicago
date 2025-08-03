@@ -1,0 +1,16 @@
+2025-07-22 04:47:50,453 - INFO - === New Inference and Scoring Session Started ===
+2025-07-22 04:47:51,266 - INFO - Total cases in source: 296. Previously completed: 230.
+2025-07-22 04:47:51,268 - INFO - This session will process 10 cases.
+2025-07-22 04:47:51,339 - INFO - Copied dataset.json to required directories.
+2025-07-22 04:47:51,350 - INFO - Copied plans.json to required directories.
+2025-07-22 04:47:53,537 - INFO - Fold 0: Checkpoint copied successfully.
+2025-07-22 04:47:55,380 - INFO - Fold 1: Checkpoint copied successfully.
+2025-07-22 04:47:57,593 - INFO - Fold 2: Checkpoint copied successfully.
+2025-07-22 04:47:59,695 - INFO - Fold 3: Checkpoint copied successfully.
+2025-07-22 04:48:01,844 - INFO - Fold 4: Checkpoint copied successfully.
+2025-07-22 04:48:01,847 - INFO - Launching nnUNetv2_predict...
+2025-07-22 04:48:03,297 - INFO - === New Inference and Scoring Session Started ===
+2025-07-22 04:48:03,351 - INFO - Total cases in source: 296. Previously completed: 230.
+2025-07-22 04:48:03,354 - INFO - This session will process 10 cases.
+2025-07-22 04:48:03,417 - INFO - Copied dataset.json to required directories.
+2025-07-22 04:48:03,425 - INFO - Copied plans.json to required directories.

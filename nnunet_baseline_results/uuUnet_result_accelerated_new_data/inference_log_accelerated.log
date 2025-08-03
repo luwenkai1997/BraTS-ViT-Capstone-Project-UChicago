@@ -1,0 +1,8 @@
+2025-07-22 02:38:14,359  === 新的加速推理会话启动 (新数据源, 含计时) ===
+2025-07-22 02:38:14,595  源文件夹 'Synthetic_dataset_random_labels' 中总案例数: 1974。
+2025-07-22 02:38:14,597  已选择最后15%进行处理: 297个案例 (从索引 1677 开始)。
+2025-07-22 02:38:14,598  已完成: 0  本次需运行: 297
+2025-07-22 02:38:14,604  正在为 297 个案例创建符号链接到 /content/nnUNet_raw/Dataset232_BraTS_2023_rGANs/imagesTs...
+2025-07-22 02:39:13,188  模型和配置文件准备完毕。
+2025-07-22 02:39:13,192  启动 nnUNetv2_predict 加速推理进程...
+2025-07-22 02:39:13,193  执行命令: nnUNetv2_predict -i /content/nnUNet_raw/Dataset232_BraTS_2023_rGANs/imagesTs -o /content/drive/MyDrive/data/uuUnet_result_accelerated_new_data/preds -d Dataset232_BraTS_2023_rGANs -c 3d_fullres -f 0 1 2 3 4 -device cuda --disable_tta
